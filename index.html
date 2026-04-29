@@ -73,16 +73,18 @@ body {
 .side {
   -ms-flex: 20%; /* IE10 */
   flex: 20%;
-  background-color: #f1f1f1;
+  background-color: #141414;
   padding: 20px;
+  color: #f1f1f1;
 }
 
 /* Main column */
 .main {   
   -ms-flex: 80%; /* IE10 */
   flex: 80%;
-  background-color: white;
+  background-color: #0F0F0E;
   padding: 20px;
+  color: #f1f1f1;
 }
 
 /* Fake image, just for this example */
@@ -95,6 +97,7 @@ body {
 /* Real image */
 img {
   border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Footer */
@@ -141,7 +144,7 @@ img {
   <div class="main">
     <h2>BIG PROJECT #1</h2>
     <h5>A Personal Portfolio, April 29, 2026</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <img src="project-personal-portfolio-screenshot.jpg" alt="screenshot-personal-project" width="70%" height="50%">
     <p>A website that serves as a supplement to a resume, offering a deeper look into projects and technical skills.</p>
     <p>In this entry, I will go over one of my first major projects: creating a personal portfolio website using custom HTML and CSS, as well as deploying it on Amazon Web Services.</p>
     <br>
