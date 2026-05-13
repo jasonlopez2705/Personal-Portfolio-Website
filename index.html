@@ -1,168 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: center;
-  background-image: url("black-and-white-mountain-landscape-orange-trees.jpg");
-  background-color: #121212;
-  background-position-x: center;
-  background-position-y: 35%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 20%; /* IE10 */
-  flex: 20%;
-  background-color: #141414;
-  padding: 20px;
-  color: #f1f1f1;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 80%; /* IE10 */
-  flex: 80%;
-  background-color: #0F0F0E;
-  padding: 20px;
-  color: #f1f1f1;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Real image */
-img {
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Footer */
-.footer {
-  padding: 10px;
-  text-align: center;
-  background: #141414;
-  color: #f1f1f1;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column-reverse;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h1>Jason Siangas-Lopez</h1>
-  <p>DevOps Engineer</p>
-</div>
-
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <img src="professional-cover-photo.JPG" alt="Cover" width="300" height="300">
-    <p>I'm a DevOps engineer who bridges the gap between business needs and technical solutions, ensuring systems are scalable, reliable, and easy to maintain.</p>
-    <h3>Current Projects</h3>
-    <p>Some projects I am currently working on.</p>
-    <img src="html-code-screenshot.jpg" alt="screenshot-personal-project" width="100%" height="10%"><br>
-  </div>
-  <div class="main">
-    <h2>BIG PROJECT #1</h2>
-    <h5>A Personal Portfolio, April 29, 2026</h5>
-    <img src="project-personal-portfolio-screenshot.jpg" alt="screenshot-personal-project" width="70%" height="50%">
-    <p>A website that serves as a supplement to a resume, offering a deeper look into projects and technical skills.</p>
-    <p>In this entry, I will go over one of my first major projects: creating a personal portfolio website using custom HTML and CSS, as well as deploying it on Amazon Web Services.</p>
-  </div>
-</div>
-
-<div class="navbar">
-  <a href="https://github.com/jasonlopez2705">Github</a>
-  <a href="https://app.joinhandshake.com/profiles/h5b9ma">Handshake</a>
-  <a href="https://www.linkedin.com/in/jason-siangas-lopez/">LinkedIn</a>
-  <a href="April, 2026 Resume.pdf">Resume</a>
-  <a href="#" class="right">Blog</a>
-</div>
-
-<div class="footer">
-  <h2>Jason Siangas-Lopez</h2>
-  <h3>Alexandria, VA</h3>
-  <p>sianlopj@proton.me</p>
-  <p>+1 (703) 987-7302</p>
-</div>
-
-</body>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">LOGO</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <u1 class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Link 1</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Link 2</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Link 3</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button">Button</a>
+          </li>
+        </u1>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
 </html>
