@@ -98,7 +98,7 @@
 
 .button:hover {
     background: #000000;
-    background-image: linear-gradient(to top, #000000 40%, #FFFFF0 100%);
+    background-image: linear-gradient(to top, #000000 40%, #FFFFFF 100%);
     color: #FFFFFF;
     transition: all 0.3s ease;
 }
