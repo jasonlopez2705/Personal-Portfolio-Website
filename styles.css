@@ -130,11 +130,11 @@
         opacity: 0;
         height: 50vh;
         z-index: -1;
-        background-color: #FFFFF0;
+        background-color: #FFFFFF;
     }
 
     .navbar__menu.active{
-        background-color: #FFFFF0;
+        background-color: #FFFFFF;
         top: 100%;
         opacity: 1;
         transition: all 0.4s ease;
