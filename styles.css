@@ -289,8 +289,8 @@
 }
 
 #main__img {
-    height: 91%;
-    width: 91%
+    height: 80%;
+    width: 80%
 }
 
 /* MOBILE RESPONSIVE */
@@ -312,7 +312,7 @@
 
     .main__content h1 {
         font-size: 2.5rem;
-        margin-top: 2.5rem;
+        margin-top: 2rem;
     }
 
     .main__content h2 {
@@ -322,6 +322,10 @@
     .main__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
+    }
+    
+    .main__img--container {
+    transform: translateY(-3rem);
     }
 }
 
@@ -343,5 +347,9 @@
     .main__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
+    }
+
+    .main__img--container {
+    transform: translateY(-9rem);
     }
 }
