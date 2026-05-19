@@ -323,10 +323,6 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
-    
-    .main__img--container {
-    transform: translateY(-3rem);
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -348,8 +344,105 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+}
 
-    .main__img--container {
-    transform: translateY(-9rem);
+/* PROJECTS SECTION CSS */
+.projects {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.projects h1 {
+    background-color: #000000;
+    background-image: linear-gradient(to right, #FFFFF0 0%, #36454F 0%, #E2DFD2 21%, #36454F 52%, #353935 78%, #28282B 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.projects__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, RGBA(0,0,0,0) 0%, RGBA(17,17,17,0.6) 100%), url('images/pic2.jpg');
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.projects__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, RGBA(0,0,0,0) 0%, RGBA(17,17,17,0.6) 100%), url('images/pic3.jpg');
+}
+
+.projects h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.projects__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.projects__card button {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #B8860B;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.projects__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .projects {
+        height: 1600px;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .projects {
+        height: 1400px
+    }    
+
+    .projects h1 {
+        font-size: 1.2rem;
+    }
+
+    .projects__card {
+        width: 300px;
+    }
+}
+
+/* FOOTER */
