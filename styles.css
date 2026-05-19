@@ -357,9 +357,10 @@
 
 .projects h1 {
     background-color: #000000;
-    background-image: linear-gradient(to right, #FFFFF0 0%, #36454F 0%, #E2DFD2 21%, #36454F 52%, #353935 78%, #28282B 100%);
+    background-image: linear-gradient(to right, #353935 0%, #36454F 10%, #343434 21%, #36454F 52%, #353935 78%, #28282B 100%);
     background-size: 100%;
-    margin-bottom: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
