@@ -355,7 +355,7 @@
     background-color: #000000;
     background-image: linear-gradient(to right, #353935 0%, #36454F 10%, #343434 21%, #36454F 52%, #353935 78%, #28282B 100%);
     background-size: 100%;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 4.5rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
@@ -385,7 +385,7 @@
     background-image: linear-gradient(to bottom, RGBA(0,0,0,0) 0%, RGBA(17,17,17,0.6) 100%), url('images/pic3.jpg');
 }
 
-.projects h2 {
+.projects__card h2 {
     position: absolute;
     top: 345px;
     left: 30px;
@@ -420,33 +420,50 @@
 
 @media screen and (max-width: 960px) {
     .projects {
-        height: 1600px;
+        height: 100%;
+    }
+
+    .projects__container {
+        margin-bottom: 5rem;
     }
 
     .projects h1 {
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .projects {
-        height: 1400px
+        height: 100%
     }    
 
     .projects h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .projects__container {
+        margin-bottom: 2.5rem;
     }
 
     .projects__card {
         width: 300px;
+    }
+
+    .projects__card h2 {
+        font-size: 1.3rem;
+    }
+
+    .projects__card p {
+
     }
 }
 
 /* FOOTER */
 .footer__container {
     background-color: #FFFFFF;
-    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -517,7 +534,7 @@
 
 @media screen and (max-width: 960px) {
     .footer__links {
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
 
     #footer__logo {
@@ -546,5 +563,6 @@
         margin: 0;
         padding: 10px;
         width: 100%;
+        font-size: .9rem;
     }
 }
