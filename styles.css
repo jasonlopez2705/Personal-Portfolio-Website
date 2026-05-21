@@ -285,15 +285,12 @@
     text-align: center;
     min-width: 0px;
     overflow: hidden;
+    border: 10px solid #FFF;
 }
 
 #main__img {
     height: auto;
     width: 700px;
-}
-
-.eyes {
-    border: 10px solid #fff;
 }
 
 /* MOBILE RESPONSIVE */
