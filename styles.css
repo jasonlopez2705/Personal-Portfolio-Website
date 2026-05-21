@@ -204,7 +204,6 @@
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
-    overflow-x: hidden;
 }
 
 .main__content h1 {
@@ -285,6 +284,7 @@
     grid-template-columns: 1fr 700px;
     text-align: center;
     min-width: 0px;
+    overflow: hidden;
 }
 
 #main__img {
@@ -310,6 +310,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        overflow: hidden;
     }
 
     .main__content {
@@ -342,6 +343,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        justify-content: center;
     }
     
     .main__content h1 {
