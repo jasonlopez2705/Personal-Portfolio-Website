@@ -199,12 +199,14 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     background-color: #000000;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+    border: 10px solid #fff;
+    overflow: hidden;
 }
 
 .main__content h1 {
@@ -281,14 +283,19 @@
 }
 
 .main__img--container {
+    display: grid;
+    grid-template-columns: 1fr 700px;
     text-align: center;
-    min-width: 700px;
-    flex-shrink: 0;
+    min-width: 0px;
 }
 
 #main__img {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 700px;
+}
+
+.eyes {
+    border: 10px solid #fff;
 }
 
 /* MOBILE RESPONSIVE */
@@ -457,7 +464,8 @@
 
 @media screen and (max-width: 480px) {
     .projects {
-        height: 100%
+        height: 100%;
+        overflow: hidden;
     }    
 
     .projects h1 {
@@ -467,6 +475,7 @@
 
     .projects__container {
         margin-bottom: 2.5rem;
+        border: 10px solid #000;
     }
 
     .projects__card {
