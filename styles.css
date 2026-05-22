@@ -287,10 +287,10 @@
     overflow: hidden;
 }
 
-#main__img {
+/* #main__img {
     height: auto;
     width: 700px;
-}
+} */
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
