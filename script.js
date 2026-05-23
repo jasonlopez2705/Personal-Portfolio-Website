@@ -1,7 +1,6 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 const svgObject = document.getElementById("main__img");
-const paths = svgDoc.querySelectorAll("path");
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
