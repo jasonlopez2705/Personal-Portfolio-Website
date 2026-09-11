@@ -1,15 +1,14 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-const svgObject = document.getElementById("main__img");
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 });
 
-document.addEventListener('mousemove', (e) => {
-    console.log(e);
-});
+// document.addEventListener('mousemove', (e) => {
+//     console.log(e);
+// });
 
 // svgObject.addEventListener("load", () => {
 //     const svgDoc = svgObject.contentDocument;
