@@ -392,6 +392,20 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+.projects__container p {
+    border-radius: .5rem;
+    margin: .3rem 0;
+    border: 2px solid black;
+}
+
+.img--container {
+    height: 40vw;
+    border: 2px solid black;
+
 }
 
 .projects__card {
