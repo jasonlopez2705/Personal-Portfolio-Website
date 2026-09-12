@@ -69,6 +69,16 @@
     height: 100%;
 }
 
+.active__navbar__links{
+    color: #B8860B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
 .navbar__btn{
     display: flex;
     justify-content: center;
