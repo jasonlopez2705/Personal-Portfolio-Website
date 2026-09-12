@@ -394,18 +394,29 @@
     flex-wrap: wrap;
     padding: 2rem;
 }
+.project {
+    width: 100%;
+    text-align: center;
+}
 
-.projects__container p {
+.about {
+    width: 100%;
+    text-align: center;
+}
+
+.about__container p {
     border-radius: .5rem;
     margin: 1rem 3rem;
     padding: 0.5rem;
     background: rgba(192, 192, 192, 0.8);
+    text-align: left;
 }
 
 .img--container {
-    width: 100%;
-    max-width: 15.5rem;
+    width: 15.5rem;
+    max-width: 100%;
     height: auto;
+    margin-top: 1rem;
 }
 
 .project-image {
