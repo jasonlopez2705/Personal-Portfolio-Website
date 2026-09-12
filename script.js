@@ -6,21 +6,24 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
-// document.addEventListener('mousemove', (e) => {
-//     console.log(e);
-// });
+const images = document.querySelectorAll(".img--container");
 
-// svgObject.addEventListener("load", () => {
-//     const svgDoc = svgObject.contentDocument;
-//     const paths = svgDoc.querySelectorAll("path");
+images.forEach(image => {
+    image.addEventListener("click", () => {
+        const modal = document.createElement("div");
+        modal.classList.add("image-modal");
 
-//     paths.forEach(path => {
-//         path.addEventListener("mouseenter", () => {
-//             path.style.stroke = "gold";
-//         });
+        const enlargedImage = document.createElement("img");
+        enlargedImage.src = image.src;
+        enlargedImage.alt = image.alt;
 
-//         path.addEventListener("mouseleave", () => {
-//             path.style.stroke = "white";
-//         });
-//     });
-// });
+        modal.appendChild(enlargedImage);
+        document.body.appendChild(modal);
+
+        modal.style.display = "flex";
+
+        modal.addEventListener("click", () => {
+            modal.remove();
+        });
+    });
+});
