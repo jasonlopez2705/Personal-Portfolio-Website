@@ -426,6 +426,15 @@
 }
 
 /* TECHNICAL SELECTED */
+.technical-project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.technical-project a:hover {
+  text-decoration: underline;
+}
+
 #technical-btn.active {
     background: #000000;
     color: #FFFFFF;
