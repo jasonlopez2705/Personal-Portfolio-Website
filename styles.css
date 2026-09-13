@@ -380,8 +380,6 @@
 .work-toggle {
     display: flex;
     border: 2px solid #333333;
-    border-radius: 2rem;
-    overflow: hidden;
     margin-top: .5rem;
 }
 
@@ -403,7 +401,27 @@
     color: #FFFFFF;
 }
 
-/* Technical selected */
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.artwork {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.artwork img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TECHNICAL SELECTED */
 #technical-btn.active {
     background: #000000;
     color: #FFFFFF;
@@ -422,6 +440,20 @@
 
 .hidden {
     display: none;
+}
+
+.technical-project {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.technical-project h2 {
+    margin-bottom: 0.5rem;
+}
+
+.technical-project p {
+    line-height: 1.6;
 }
 
 /* PROJECTS SECTION CSS */
