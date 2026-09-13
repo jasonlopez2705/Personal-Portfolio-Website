@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JASON LOPEZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">JASON LOPEZ</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <u1 class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="active__navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="portfolio.html" class="navbar__links">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="mailto:sianlopj@proton.me" class="button">Contact</a>
+          </li>
+        </u1>
+      </div>
+    </nav>
+ <!-- PROJECT ENTRY -->
+    <main class="project-entry">
+
+        <!-- TITLE -->
+        <header class="project-header">
+
+            <h1>Personal Portfolio Website</h1>
+
+            <p class="project-subtitle">
+                A responsive portfolio website built from scratch.
+            </p>
+
+            <div class="project-details">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>AWS</span>
+                <span>GitHub</span>
+            </div>
+
+        </header>
+
+
+        <!-- MAIN PROJECT IMAGE -->
+        <div class="project-entry-image">
+
+            <img 
+                src="images/Personal Portfolio Website.webp"
+                alt="Screenshot of my personal portfolio website"
+            >
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+        <section class="project-section">
+
+            <h2>Overview</h2>
+
+            <p>
+                This project is my personal portfolio website. I designed and
+                developed the website to showcase my technical and creative work
+                while creating a space that represents my skills and personality.
+            </p>
+
+        </section>
+
+
+        <!-- THE CHALLENGE -->
+        <section class="project-section">
+
+            <h2>The Challenge</h2>
+
+            <p>
+                I wanted to create a website that was simple to navigate while
+                still being visually interesting. I also wanted the website to
+                demonstrate my understanding of web development rather than
+                relying on a pre-built template.
+            </p>
+
+        </section>
+
+
+        <!-- THE PROCESS -->
+        <section class="project-section">
+
+            <h2>The Process</h2>
+
+            <p>
+                I began by planning the structure of the website and determining how I wanted visitors to navigate between my technical and creative work. I created a HTML skeleton I can reuse for the site's pages and for future development. I decided to settle for a static site, as for a portfolio I don't believe have the site be dynamic was an advantage.
+            </p>
+
+            <p>
+                Next, I had to build the pipeline. I used GitHub for version control and coupled with GitHub Actions I wrote some code to automatically push my updates to the S3 bucket. What's left is verifying the updates and deploying using AWS Amplify.
+            </p>
+
+            <div class="project-entry-image">
+
+            <img src="images/github-actions-code.jpg" alt="Code for GitHub Action">
+            </div>
+
+            <p>
+                Throughout development, I tested the website at different screen sizes and made adjustments to improve responsiveness,
+                accessibility, and usability.
+            </p>
+
+        </section>
+
+
+        <!-- TECHNOLOGIES -->
+        <section class="project-section">
+
+            <h2>Technologies</h2>
+
+            <ul class="no-bullets">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>AWS</li>
+            </ul>
+
+        </section>
+
+
+        <!-- WHAT I LEARNED -->
+        <section class="project-section">
+
+            <h2>What I Learned</h2>
+
+            <p>
+                This project helped me strengthen my understanding of responsive
+                web design, version control, and deployment. It also gave me an
+                opportunity to practice building a project from the ground up
+                and making design decisions based on the experience I wanted
+                visitors to have.
+            </p>
+
+        </section>
+
+
+        <!-- LINKS -->
+        <section class="project-links">
+
+            <a href="https://github.com/jasonlopez2705/Personal-Portfolio-Website" target="_blank">
+                View on GitHub
+            </a>
+
+        </section>
+
+    <!-- FOOTER SECTION -->
+     <div class="footer__container">
+      <div class="footer__links">
+        <div class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo"><i class="fas faa-gem"></i>Jason Lopez</a>
+            </div>
+            <p class="website__rights">© 2026 Jason Siangas-Lopez. All rights reserved</p>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About</h2>
+            <a href="/">Who is Jason</a>
+            <a href="/">Professional Career</a>
+            <a href="/">References</a>
+            <a href="/">Blog</a>
+            <a href="/">Contact</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="www.linkedin.com/in/jason-siangas-lopez">LinkedIn</a>
+            <a href="https://www.facebook.com/jason.siangas.1">Facebook</a>
+            <a href="https://www.instagram.com/caneat.allyou/">Instagram</a>
+            <a href="https://www.tiktok.com/@allyou_caneat6">TikTok</a>
+            <a href="https://github.com/jasonlopez2705">GitHub</a>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
