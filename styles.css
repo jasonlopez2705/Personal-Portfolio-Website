@@ -383,6 +383,10 @@
     margin-top: .5rem;
 }
 
+.hidden {
+    display: none;
+}
+
 .toggle-btn {
     border: none;
     background: #FFFFFF;
