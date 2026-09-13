@@ -461,8 +461,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-
+    height: auto;
 }
 
 .projects h1 {
