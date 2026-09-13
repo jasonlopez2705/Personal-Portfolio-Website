@@ -27,3 +27,25 @@ images.forEach(image => {
         });
     });
 });
+
+const creativeBtn = document.getElementById("creative-btn");
+const technicalBtn = document.getElementById("technical-btn");
+
+const creativeWork = document.getElementById("creative-work");
+const technicalWork = document.getElementById("technical-work");
+
+creativeBtn.addEventListener("click", () => {
+    creativeWork.classList.remove("hidden");
+    technicalWork.classList.add("hidden");
+
+    creativeBtn.classList.add("active");
+    technicalBtn.classList.remove("active");
+});
+
+technicalBtn.addEventListener("click", () => {
+    technicalWork.classList.remove("hidden");
+    creativeWork.classList.add("hidden");
+
+    technicalBtn.classList.add("active");
+    creativeBtn.classList.remove("active");
+});
