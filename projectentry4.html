@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JASON LOPEZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">JASON LOPEZ</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <u1 class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="portfolio.html" class="navbar__links">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="mailto:sianlopj@proton.me" class="button">Contact</a>
+          </li>
+        </u1>
+      </div>
+    </nav>
+ <!-- PROJECT ENTRY -->
+    <main class="project-entry">
+
+        <!-- TITLE -->
+        <header class="project-header">
+
+            <h1>AWS Serverless Email Marketing</h1>
+
+            <p class="project-subtitle">
+                Quick and easy email marketing for my friends Bachelor Party.
+            </p>
+
+            <div class="project-details">
+                <span>AWS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+        </header>
+        <!-- MAIN PROJECT IMAGE -->
+        <div class="project-entry-image">
+
+            <img 
+                src="images/email-bach-party.jpg"
+                alt="Screenshot of my personal portfolio website"
+            >
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+        <section class="project-section">
+
+            <h2>Overview</h2>
+
+            <p>
+                My best friend Brayden got engaged! Aside from taking terrible engagement photos I also got to plan his bachelor party since I am the best man. This was such a fun project! For reference one of my best friends favorite show is Peaky Blinders.
+            </p>
+
+        </section>
+
+
+        <!-- THE CHALLENGE -->
+        <section class="project-section">
+
+            <h2>The Challenge</h2>
+
+            <p>
+              Planning the bachelor party is hard, but whats harder is keeping 6 dudes on track! Apart from asking multiple times what they were comfortable with, I had to also ensure everyone knew what the plan was. I kept thinking of ways to approach this, then I remembered I'm an email developer!
+            </p>
+
+        </section>
+
+
+        <!-- THE PROCESS -->
+        <section class="project-section">
+
+            <h2>The Process</h2>
+            <div class="project-entry-image">
+              <img src="images/schedule.jpg" alt="Code for GitHub Action">
+            </div>
+            <p>
+              The first step is to design the email. I had to answer a few questions:
+            </p>
+            <br>
+            <li class="no-bullets">
+              <ul>
+                What information did I want on this?
+              </ul>
+              <ul>
+                How much information?
+              </ul>
+              <ul>
+                Was this worth the time and effort?
+              </ul>
+            </li>
+            <br>
+            <p>The last question was easy to answer, I knew this was only going to take a few minutes and Brayden is my best friend so. Now, if I wanted this email to actually be of use, I had to think of a use case scenario. If I am out with friends drinking, I don't want to be the responsible for our directions. That's our use case, and it's true the planner never gets to have as much fun. So, I decided I want the itenary to be on this email, as accesible as possible. I want any one of the groomsmen to be able to look at the email, while we're out, and understand where we need to go.
+            </p>
+            <div class="project-entry-image">
+              <img src="images/aws-services.jpg" alt="Code for GitHub Action">
+            </div>
+            <p>
+              After the email was designed, next was the technical (not-so-technical) part. For this project, I use AWS Simple Email Service, Lambda, S3, EventBridge, and Identity & Access Management. I created a bucket into S3 following best practice with mostly default settings. This bucket will store the email template and contacts list. Simple, I made the HTML and CSS, and the contacts list is a simple CSV containg personalization and emails of course.
+            </p>
+            <br>
+            <p>
+              The next step is configuring the SES, which is as easy as using your domain (this website) and verifying an email. Next, I add all the different identites (groomsmen and wife) and I send them a verification email. Users must be verified to receive emails, for this project it was easy enough to do it manually.
+            </p>
+                        <br>
+            <p>
+              For the Lambda function, we basically loop through our contacts list and grab whats needed i.e. personalization and email address. Then we call SES to send the email and its as simple as that. You will have to create a policy to give SES permissions to access S3.
+            </p>
+
+        </section>
+
+
+        <!-- TECHNOLOGIES -->
+        <section class="project-section">
+
+            <h2>Technologies</h2>
+
+            <ul class="no-bullets">
+                <li>AWS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+
+        </section>
+
+
+        <!-- WHAT I LEARNED -->
+        <section class="project-section">
+
+            <h2>What I Learned</h2>
+
+            <p>
+                I had so much fun with this project because it was silly and ended up being a lifesaver. Without this email on everyones phone in an easy to read format, the trip would have been much more chaotic. On top of that, even though I sent it, all the groomsmen still asked me where we were going next... Like cmon, did you not read the email?
+            </p>
+
+        </section>
+
+    <!-- FOOTER SECTION -->
+     <div class="footer__container">
+      <div class="footer__links">
+        <div class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo"><i class="fas faa-gem"></i>Jason Lopez</a>
+            </div>
+            <p class="website__rights">© 2026 Jason Siangas-Lopez. All rights reserved</p>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About</h2>
+            <a href="whoisjason.html">Who is Jason</a>
+            <a href="/">Professional Career</a>
+            <a href="/">References</a>
+            <a href="/">Blog</a>
+            <a href="/">Contact</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="www.linkedin.com/in/jason-siangas-lopez">LinkedIn</a>
+            <a href="https://www.facebook.com/jason.siangas.1">Facebook</a>
+            <a href="https://www.instagram.com/caneat.allyou/">Instagram</a>
+            <a href="https://www.tiktok.com/@allyou_caneat6">TikTok</a>
+            <a href="https://github.com/jasonlopez2705">GitHub</a>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
